@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,48 @@
   <title>Dashboard</title>
 </head>
 <body class="bg-slate-100">
-  <nav class="bg-white w-full h-16 flex flex-row items-center justify-between shadow px-6">
-    <a href="#">
-      <h3 class="font-normal text-orange-500 uppercase">Kado Academia</h3>
-    </a>
+  <header>
+    <nav class="fixed z-10 bg-white w-full h-16 flex flex-row items-center justify-between shadow px-4">
+      <div>
+        <h5 class="font-normal text-orange-500 uppercase">Kado Academia</h5>
+        <p class="text-sm font-medium text-gray-500">R. Valmir Augusto Vieira, Wosnievski, 226. Santa Augusta, Criciúma - SC, 88805-470</p>
+      </div>
 
-    <ul class="flex flex-row items-center justify-end gap-6">
-      <a href="#">
-        <i class="far fa-bell text-2xl text-gray-500"></i>
-      </a>
-      <a href="#">
-        <i class="far fa-user-circle text-2xl text-gray-500"></i>
-      </a>
-    </ul>
-  </nav>
+      <ul class="flex flex-row items-center justify-end gap-6">
+        <a href="#">
+          <i class="far fa-bell text-2xl text-gray-500"></i>
+        </a>
+        <a href="#">
+          <i class="far fa-user-circle text-2xl text-gray-500"></i>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <aside class="bg-orange-500 w-20 min-h-screen fixed py-6">
+      <nav class="pt-14">
+        <ul class="flex flex-col items-center justify-center gap-4 px-1">
+          <li class="flex flex-col items-center justify-center border-slate-100 border-b-[1px] pb-4 w-full">
+            <a href="#" class="flex flex-col items-center justify-center gap-2">
+              <i class="fas fa-th-large text-3xl text-white"></i>
+              <span class="text-white font-light text-[10px] text-center">Dashboard</span>
+            </a>
+          </li>
+          <li class="flex flex-row items-center justify-center border-slate-100 border-b-[1px] pb-4 w-full">
+            <a href="#" class="flex flex-col items-center justify-center gap-2">
+              <i class="far fa-clock text-3xl text-white"></i>
+              <span class="text-white font-light text-[10px] text-center">Agendamentos whatsapp</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="py-24 pl-24">
+      <h1 class="font-light">Bem vindo Admin</h1>
+    </section>
+  </main>
 
   <script src="https://kit.fontawesome.com/5e2467f0eb.js" crossorigin="anonymous"></script>
 </body>
