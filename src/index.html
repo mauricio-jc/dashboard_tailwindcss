@@ -23,14 +23,16 @@
 
       <ul class="flex flex-row items-center justify-end gap-6">
         <li>
-          <a href="#">
+          <a href="#" class="relative">
             <i class="fab fa-whatsapp text-xl text-white"></i>
+            <span class="absolute -top-2 -right-2 flex h-4 min-w-4 shrink-0 items-center justify-center rounded-full bg-orange-600 px-1 text-xs text-white">10</span>
           </a>
         </li>
 
         <li class="dropdown relative inline-block text-left">
-          <a href="#" id="dropdownNotification">
+          <a href="#" id="dropdownNotification" class="relative">
             <i class="far fa-bell text-xl text-white"></i>
+            <span class="absolute -top-2 -right-2 flex h-4 min-w-4 shrink-0 items-center justify-center rounded-full bg-orange-600 px-1 text-xs text-white">5</span>
           </a>
           <div id="dropdownMenuNotification" class="dropdown-content opacity-0 invisible absolute right-0 mt-1 w-96 max-h-[533px] rounded-md shadow-md bg-white ring-1 ring-black ring-opacity-5 focus:outline-none transition-opacity duration-300 ease-in-out">
             <div role="menu" aria-orientation="vertical" aria-labelledby="dropdownNotification">
@@ -223,34 +225,6 @@
   </main>
 
   <script src="https://kit.fontawesome.com/5e2467f0eb.js" crossorigin="anonymous"></script>
-  <script>
-    document.getElementById('dropdownNotification').addEventListener('click', function() {
-      const dropdownMenuUser = document.getElementById('dropdownMenuNotification');
-      dropdownMenuUser.classList.toggle('opacity-0');
-      dropdownMenuUser.classList.toggle('invisible');
-      dropdownMenuUser.classList.toggle('opacity-100');
-    });
-
-    document.getElementById('dropdownUser').addEventListener('click', function() {
-      const dropdownMenuUser = document.getElementById('dropdownMenuUser');
-      dropdownMenuUser.classList.toggle('opacity-0');
-      dropdownMenuUser.classList.toggle('invisible');
-      dropdownMenuUser.classList.toggle('opacity-100');
-    });
-
-    window.onclick = function(event) {
-      if (!event.target.closest('.dropdown')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if(!openDropdown.classList.contains('opacity-0') && !openDropdown.classList.contains('invisible')) {
-            openDropdown.classList.add('opacity-0');
-            openDropdown.classList.add('invisible');
-            openDropdown.classList.remove('opacity-100');
-          }
-        }
-      }
-    }
-  </script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
