@@ -48,3 +48,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #6b7280;
 }
+
+.dropdown-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    visibility: hidden;
+}
+.dropdown-content.show {
+    opacity: 1;
+    visibility: visible;
+}
