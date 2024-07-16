@@ -36,4 +36,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
             setTimeout(() => modal.classList.add('invisible'), 300);
         });
     });
+
+    const closeAlertButtons = document.querySelectorAll('.close-alert');
+    closeAlertButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const modal = event.currentTarget.closest('.alert');
+            modal.classList.remove('opacity-100');
+            setTimeout(() => {
+                modal.classList.add('opacity-0');
+            }, 700);
+
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 1200);
+        });
+    }); 
 });
