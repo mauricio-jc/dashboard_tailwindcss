@@ -24,7 +24,10 @@
                     <input type="email" class="w-full text-sm px-3 py-3 outline-none border-solid border border-gray-300 rounded-md focus:border-none focus:ring-1 focus:ring-orange-600">
                 </div>
 
-                <div class="w-full px-3 mb-4">
+                <div class="w-full px-3 mb-4 relative password">
+                    <i class="far fa-eye text-2xl eye-icon absolute right-6 top-[34px] cursor-pointer z-50 hidden" id="eye"></i>
+                    <i class="far fa-eye-slash text-2xl eye-icon absolute right-6 top-[34px] cursor-pointer z-50" id="eye-slash"></i>
+                        
                     <label for="password" class="block text-gray-700 font-semibold text-sm mb-1">Senha: *</label>
                     <input type="password" id="password" class="w-full text-sm px-3 py-3 outline-none border-solid border border-gray-300 rounded-md focus:border-none focus:ring-1 focus:ring-orange-600">
                 </div>
@@ -39,12 +42,15 @@
                 </div>
                 
                 <div class="w-full px-3 flex">
-                    <button type="submit" class="bg-orange-600 text-white font-semibold w-full py-3 rounded-full hover:bg-orange-700 transition duration-300 uppercase">Entrar</button>
+                    <!-- <button type="submit" class="bg-orange-600 text-white font-semibold w-full py-3 rounded-full hover:bg-orange-700 transition duration-300 uppercase">Entrar</button> -->
+                    <a href="index.html" class="bg-orange-600 text-white text-center font-semibold w-full py-3 rounded-full hover:bg-orange-700 transition duration-300 uppercase">Entrar</a>
                 </div>
             </form>
         </div>
     </div>
 
     <script src="https://kit.fontawesome.com/5e2467f0eb.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/auth.js"></script>
 </body>
 </html>
